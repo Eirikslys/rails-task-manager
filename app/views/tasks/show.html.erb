@@ -1,0 +1,7 @@
+<h3><%= @task.title %> </h3><br>
+<%= @task.details %> <br>
+<p> is this task completed?</p>
+<%= check_box_tag 'completed', '1', @task.completed, disabled: true %>
+<br>
+
+<a id="link" <%= link_to "Edit", edit_path %>
